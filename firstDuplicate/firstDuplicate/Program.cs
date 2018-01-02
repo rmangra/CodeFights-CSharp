@@ -20,8 +20,9 @@ namespace firstDuplicate
          * This was the first attempt at a minimum viable solution.
          * This solution utilizes nested loops to iterate through the array elements 
          * and perform comparison operators to determine the index of the first duplicate.
-         * This is a O(n^2) solution, and although it passes 20/22 test cases,
-         * it fails on the execution time constraint and O(n) constraint. 
+         * This is a O(n^2) solution because it traverses the array elements more than once.
+         * Although this approach passes 20/22 test cases, it fails on the execution time
+         * constraint and O(n) constraint. 
          */
 
         public static int firstDuplicate1(int[] a)
