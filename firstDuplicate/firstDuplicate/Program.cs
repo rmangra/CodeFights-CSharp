@@ -9,7 +9,7 @@ namespace firstDuplicate
         {
             int[] a = { 8, 4, 6, 2, 6, 4, 7, 9, 5, 8 }; // Test Arrays
             // int[] a = { 1, 1, 2, 2, 1 }; // Test Arrays
-            Console.WriteLine("Result: " + firstDuplicate2(a));
+            Console.WriteLine("Result: " + firstDuplicate3(a));
         }
 
         /* firstDuplicate1:
@@ -69,6 +69,21 @@ namespace firstDuplicate
                     return a[i];
                 else
                     numbers.Add(a[i]);
+            }
+            return -1;
+        }
+
+
+
+        public static int firstDuplicate3(int[] a)
+        {
+            Dictionary<int, int> numbers = new Dictionary<int, int>();
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (numbers.ContainsKey(a[i]))
+                    return a[i];
+                else
+                    numbers.Add(a[i], 1);
             }
             return -1;
         }
