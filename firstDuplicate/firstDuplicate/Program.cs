@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace firstDuplicate
 {
@@ -50,7 +47,18 @@ namespace firstDuplicate
                 return a[mindupindex];
         }
 
-
+        /* firstDuplicate2:
+         * 
+         * This solution utilizes a HashSet data structure.
+         * A HashSet does not contain duplicate elements, but its elements are not
+         * stored in a particular order.
+         * This is an O(n) solution because it iterates through the array once or
+         * at least until the first duplicate is found.
+         * It passes all test cases (22/22).
+         * 
+         * MSDN HashSet<T> Class Documentation:
+         * https://msdn.microsoft.com/en-us/library/bb359438(v=vs.110).aspx
+         */
 
         public static int firstDuplicate2(int[] a)
         {
