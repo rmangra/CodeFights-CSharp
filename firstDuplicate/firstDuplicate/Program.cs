@@ -73,7 +73,19 @@ namespace firstDuplicate
             return -1;
         }
 
-
+        /* firstDuplicate3:
+         * 
+         * This solution utilizes a Dictionary data structure.
+         * A Dictionary is a collection of key-value pairs.
+         * This algorithm is more robust because it can be extended to provide a solution to other
+         * similiar cases. For example, if you wanted to track the occurrences of an element in the array. 
+         * This is an O(n) solution because it iterates through the array once or
+         * at least until the first duplicate is found.
+         * It passes all test cases (22/22).
+         * 
+         * MSDN Dictionary<TKey, TValue> Class Documentation: 
+         * https://msdn.microsoft.com/en-us/library/xfhwa508(v=vs.110).aspx
+         */
 
         public static int firstDuplicate3(int[] a)
         {
