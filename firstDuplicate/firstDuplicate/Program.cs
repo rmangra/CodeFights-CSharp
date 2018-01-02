@@ -12,7 +12,7 @@ namespace firstDuplicate
         {
             int[] a = { 8, 4, 6, 2, 6, 4, 7, 9, 5, 8 }; // Test Arrays
             // int[] a = { 1, 1, 2, 2, 1 }; // Test Arrays
-            Console.WriteLine("Result: " + firstDuplicate1(a));
+            Console.WriteLine("Result: " + firstDuplicate2(a));
         }
 
         /* firstDuplicate1:
@@ -42,13 +42,27 @@ namespace firstDuplicate
                                 mindupindex = j;
                         }
                     }
-
                 }
             }
             if (mindupindex == -1)
                 return -1;
             else
                 return a[mindupindex];
+        }
+
+
+
+        public static int firstDuplicate2(int[] a)
+        {
+            HashSet<int> numbers = new HashSet<int>();
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (numbers.Contains(a[i]))
+                    return a[i];
+                else
+                    numbers.Add(a[i]);
+            }
+            return -1;
         }
     }
 }
