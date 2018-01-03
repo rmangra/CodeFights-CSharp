@@ -47,9 +47,10 @@ Even though ```054 + 091 = 145```, ```054``` and ```091``` both contain leading 
 An array of three non-empty strings containing only uppercase English letters.
 
 Guaranteed constraints:
-```crypt.length = 3```,
-```1 ≤ crypt[i].length ≤ 14```.
-
+```
+crypt.length = 3,
+1 ≤ crypt[i].length ≤ 14.
+```
 - [input] array.array.char solution
 
 An array consisting of pairs of characters that represent the correspondence between letters and numbers in the cryptarithm. The first character in the pair is an uppercase English letter, and the second one is a digit in the range from ```0``` to ```9```.
