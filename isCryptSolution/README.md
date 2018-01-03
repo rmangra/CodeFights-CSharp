@@ -7,7 +7,7 @@ You have an array of strings ```crypt```, the cryptarithm, and an an array conta
 
 If crypt, when it is decoded by replacing all of the letters in the cryptarithm with digits using the mapping in solution, becomes a valid arithmetic equation containing no numbers with leading zeroes, the answer is ```true```. If it does not become a valid arithmetic solution, the answer is ```false```.
 
-####Example
+#### Example
 
 For crypt = ```["SEND", "MORE", "MONEY"]``` and
 ```
