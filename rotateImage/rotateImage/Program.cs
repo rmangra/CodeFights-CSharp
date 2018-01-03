@@ -10,6 +10,7 @@ namespace rotateImage
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
