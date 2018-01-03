@@ -78,7 +78,7 @@ namespace sudoku2
             return true;
         }
         
-        // Method to printing contents of the Sudoku board
+        // Method to print contents of the Sudoku board
         public static void printBoard(char[][] sudoku)
         {
             for (int i = 0; i < sudoku.Length; i++)
