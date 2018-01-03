@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace rotateImage
 {
@@ -10,12 +7,7 @@ namespace rotateImage
     {
         static void Main(string[] args)
         {
-            /*
-            int[][] i = new int[2][];
-            i[0] = new int[3] { 1, 2, 3 };
-            i[1] = new int[2] { 4, 5 };
-            */
-
+            // Setup test matrix
             int[][] matrix = new int[][]
             {
                   new int[] { 1, 2, 3 },
@@ -25,6 +17,7 @@ namespace rotateImage
             print(matrix, "Before");
             
             int[][] rotated = rotate2DMatrix(matrix);
+
             print(rotated, "After");
         }
 
@@ -57,6 +50,7 @@ namespace rotateImage
             return rotate;
         }
 
+        // static method to print the contents of the matrix
         public static void print(int[][] matrix, string message)
         {
             Console.WriteLine(message);
